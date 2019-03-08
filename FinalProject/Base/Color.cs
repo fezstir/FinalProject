@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Base
 {
-    class Color
+    public enum GadgetColor
     {
+
+        Chrome, Black, Red, Green, Blue
+
     }
+}
 }

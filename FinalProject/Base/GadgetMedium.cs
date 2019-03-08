@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Base
 {
-    class GadgetMedium
+    class GadgetMedium : AbstractGadget
     {
+
+        public override decimal Price { get; } = 850.00m;
+
+        public GadgetMedium(Iwidget widget)
+        : this(GadgetColor.Green, widget) { }
+
+        public GadgetMedium(GadgetColor color, IWidget widget)
+        : base(color, widget) { }
+
     }
 }

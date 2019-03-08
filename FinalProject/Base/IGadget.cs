@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Base
 {
-    interface IGadget
+    public interface IGadget : IVisitable
     {
+
+        int Size { get; }
+        bool IsWide { get; }
+
+        void AcceptVisitor(IWidgetVisitor visitor);
     }
+}
 }

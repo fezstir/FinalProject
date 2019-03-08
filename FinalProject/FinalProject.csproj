@@ -46,11 +46,22 @@
       <Link>Program.cs</Link>
     </Compile>
     <Compile Include="Base\AbstractGadget.cs" />
+    <Compile Include="Base\AbstractWidget.cs" />
+    <Compile Include="Base\Color.cs" />
+    <Compile Include="Base\GadgetLarger.cs" />
+    <Compile Include="Base\GadgetMedium.cs" />
+    <Compile Include="Base\GadgetPower.cs" />
+    <Compile Include="Base\GadgetSmall.cs" />
+    <Compile Include="Base\IGadget.cs" />
+    <Compile Include="Base\IWidget.cs" />
+    <Compile Include="Base\WidgetColor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Iterator\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
