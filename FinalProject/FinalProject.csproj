@@ -53,8 +53,6 @@
     <Compile Include="Base\GadgetPower.cs" />
     <Compile Include="Base\GadgetSmall.cs" />
     <Compile Include="Base\IGadget.cs" />
-    <Compile Include="Base\IWidget.cs" />
-    <Compile Include="Base\WidgetColor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
