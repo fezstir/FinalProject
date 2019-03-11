@@ -10,12 +10,23 @@ namespace FinalProject
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            SerialNumberGeneratorGadgetSmall generatorGadgetSmall = SerialNumberGeneratorGadgetSmall.Instance;
+            Console.WriteLine("gadget small next serial number: " + generatorGadgetSmall.NextSerial);
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            SerialNumberGeneratorGadgetMedium generatorGadgetMedium = SerialNumberGeneratorGadgetMedium.Instance;
+            Console.WriteLine("gadget medium next serial number: " + generatorGadgetMedium.NextSerial);
+
+            SerialNumberGeneratorGadgetLarge generatorGadgetLarge = SerialNumberGeneratorGadgetLarge.Instance;
+            Console.WriteLine("gadget large next serial number: " + generatorGadgetLarge.NextSerial);
+
+            SerialNumberGeneratorWidgetSmall generatorWidgetSmall = SerialNumberGeneratorWidgetSmall.Instance;
+            Console.WriteLine("widget small next serial number: " + generatorWidgetSmall.NextSerial);
+
+            SerialNumberGeneratorWidgetMedium generatorWidgetMedium = SerialNumberGeneratorWidgetMedium.Instance;
+            Console.WriteLine("widget medium next serial number: " + generatorWidgetMedium.NextSerial);
+
+            SerialNumberGeneratorWidgetLarge generatorWidgetLarge = SerialNumberGeneratorWidgetLarge.Instance;
+            Console.WriteLine("widget large next serial number: " + generatorWidgetLarge.NextSerial); 
         }
     }
 }
